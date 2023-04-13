@@ -17,6 +17,10 @@ const errorHandlerMiddleware = require('./middleware/error-handler');
 app.use(express.json());
 // extra packages
 
+app.get('/', (req, res) => {
+  res.send('<h1>Jobs API</h1><a href="/api-docs">Documentation</a>');
+});
+
 // routes
 app.use('/api/v1/auth', authRouter)
 app.use('/api/v1/jobs', jobsRouter)
