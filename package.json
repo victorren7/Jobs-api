@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "author": "Victor Renderos",
   "license": "ISC",
@@ -27,5 +27,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
+  },
+  "engines": {
+    "node": "14.5.0"
   }
 }
